@@ -1,5 +1,6 @@
 package fr.vertours.tutorialmod;
 
+import fr.vertours.tutorialmod.block.ModBlocks;
 import fr.vertours.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -13,5 +14,6 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
